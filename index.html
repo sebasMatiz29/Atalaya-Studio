@@ -3,84 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Atalaya studio">
+    <meta name="description" content="Atalaya Studio, agencia creativa especializada en diseño web, branding y estrategia digital.">
 
-    <title>
-        Atalaya studio | Inicio
-    </title>
+    <title>Atalaya Studio | Inicio</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Atalaya studio</h1>
-        <nav>
-            <ul>
+    <header class="site-header">
+        <a class="logo" href="#inicio" aria-label="Atalaya Studio - Inicio">Atalaya Studio</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+            <span class="sr-only">Abrir menú de navegación</span>
+            <span aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul id="menu-principal">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Transformamos ideas en experiencias digitales</h2>
+        <section class="hero" id="inicio">
+            <h1>Transformamos ideas en experiencias digitales</h1>
             <p>Agencia creativa especializada en diseño web, branding y estrategia digital.</p>
-            <button>Ver proyectos</button>
+            <a class="button" href="#servicios">Ver proyectos</a>
         </section>
-        <section id="servicios">
-            <h2>Nuestros Servicios - con Implementación de IA</h2>
 
-            <article>
-                <h3>Diseño Web</h3>
-                <p>Sitios modernos y responsivos adaptados a tu marca.</p>
-            </article>
-            <article>
-                <h3>Desarrollo a Medida</h3>
-                <p>Aplicaciones web robustas y escalables.</p>
-            </article>
-            <article>
-                <h3>Consultoría SEO</h3>
-                <p>Optimización para motores de búsqueda.</p>
-            </article>
+        <section class="section" id="servicios">
+            <h2>Nuestros servicios con implementación de IA</h2>
+
+            <div class="service-grid">
+                <article class="card">
+                    <h3>Diseño web</h3>
+                    <p>Sitios modernos y responsivos adaptados a tu marca.</p>
+                </article>
+                <article class="card">
+                    <h3>Desarrollo a medida</h3>
+                    <p>Aplicaciones web robustas, escalables y fáciles de mantener.</p>
+                </article>
+                <article class="card">
+                    <h3>Consultoría SEO</h3>
+                    <p>Optimización técnica y de contenido para motores de búsqueda.</p>
+                </article>
+            </div>
         </section>
-        <section id="testimonios">
-            <h2>Testimonios de Clientes</h2>
-            <div id="contenedor-testimonio"></div>
+
+        <section class="section" id="testimonios">
+            <h2>Testimonios de clientes</h2>
+            <div class="testimonial-grid" id="contenedor-testimonio" aria-live="polite"></div>
         </section>
-        <section id="contacto">
+
+        <section class="section" id="contacto">
             <h2>Contáctanos</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" novalidate>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Tu email">
+                    <input type="email" id="email" name="email" placeholder="Tu email" autocomplete="email" required>
                 </div>
                 <div>
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="4"></textarea>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
                 </div>
-                <button type="submit">Enviar Mensaje</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+                <button type="submit">Enviar mensaje</button>
             </form>
         </section>
-        
-        <!-- Más contenido aquí -->
     </main>
 
-    <footer>
-        <p>&copy; 2024 Atalaya studio. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales: 
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a> | 
+    <footer class="site-footer">
+        <p>&copy; 2024 Atalaya Studio. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
             <a href="#">Instagram</a>
         </p>
     </footer>
 
     <script type="module" src="js/main.js"></script>
-
 </body>
 </html>
