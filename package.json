@@ -1,0 +1,16 @@
+{
+  "name": "atalaya-studio",
+  "version": "1.0.0",
+  "description": "Landing page full-stack de Atalaya Studio con Express y Bootstrap.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

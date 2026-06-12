@@ -1,0 +1,17 @@
+[
+  {
+    "id": "diseno-web",
+    "titulo": "Diseño web",
+    "descripcion": "Sitios modernos y responsivos adaptados a tu marca."
+  },
+  {
+    "id": "desarrollo-medida",
+    "titulo": "Desarrollo a medida",
+    "descripcion": "Aplicaciones web robustas, escalables y fáciles de mantener."
+  },
+  {
+    "id": "consultoria-seo",
+    "titulo": "Consultoría SEO",
+    "descripcion": "Optimización técnica y de contenido para motores de búsqueda."
+  }
+]
