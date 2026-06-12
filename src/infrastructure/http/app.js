@@ -16,6 +16,7 @@ export function createApp() {
     app.use(appCors);
     app.use(express.static(PROJECT_ROOT));
     app.use('/api', createApiRoutes());
+    app.use('/.netlify/functions/api', createApiRoutes());
     app.use(errorHandler);
 
     return app;
