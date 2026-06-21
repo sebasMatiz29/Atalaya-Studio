@@ -76,7 +76,7 @@ export function renderizarServicios(servicios, contenedor) {
         titulo.textContent = servicio.titulo ?? 'Servicio';
 
         const descripcion = document.createElement('p');
-        descripcion.className = 'card-text text-secondary';
+        descripcion.className = 'card-text text-readable-secondary';
         descripcion.textContent = servicio.descripcion ?? 'Descripción no disponible.';
 
         cuerpo.append(titulo, descripcion);
@@ -105,14 +105,14 @@ export function renderizarTestimonios(testimonios, contenedor) {
         nombre.textContent = testimonioData.nombre ?? 'Cliente';
 
         const empresa = document.createElement('p');
-        empresa.className = 'card-text text-secondary mb-3';
+        empresa.className = 'card-text text-readable-secondary mb-3';
         empresa.textContent = 'Trabaja en: ';
 
         const empresaNombre = document.createElement('strong');
         empresaNombre.textContent = testimonioData.empresa ?? 'Empresa no especificada';
 
         const email = document.createElement('small');
-        email.className = 'badge text-bg-light text-primary border';
+        email.className = 'badge text-bg-light badge-contrast border';
         email.textContent = testimonioData.email ?? 'Correo no disponible';
 
         empresa.appendChild(empresaNombre);
